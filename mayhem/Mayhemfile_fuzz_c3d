@@ -1,0 +1,9 @@
+project: savantenvs/dart
+target: fuzz_c3d
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_c3d/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_c3d
+    libfuzzer: true
+    timeout: 10

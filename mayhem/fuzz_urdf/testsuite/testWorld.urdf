@@ -1,0 +1,9 @@
+<world name="testWorld">
+
+    <include filename="../six_axis_arm/six_axis_arm.urdf" model_name="six_axis_arm"/>
+
+    <entity model="six_axis_arm" name="six_axis_arm">
+        <origin xyz="5.0 0.0 0.0" rpy="0 0 0"/>
+    </entity>
+
+</world>

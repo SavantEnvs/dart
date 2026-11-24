@@ -1,0 +1,9 @@
+project: savantenvs/dart
+target: fuzz_mjcf
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_mjcf/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mjcf
+    libfuzzer: true
+    timeout: 10

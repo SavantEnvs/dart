@@ -1,0 +1,9 @@
+project: savantenvs/dart
+target: fuzz_ppm
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ppm/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_ppm
+    libfuzzer: true
+    timeout: 10
